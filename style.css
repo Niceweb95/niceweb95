@@ -1,0 +1,1270 @@
+/*
+
+
+.example4{
+    border-collapse: collapse;
+}
+.example4 th{
+    background: #b7efb7;
+    border: 1px solid #333;
+}
+.example4 td{
+    background: #fff8dc;
+    border: 1px solid #333;
+}
+.example4 tr:nth-of-type(2n-1) td{
+    background: #c0e0fc;
+}
+
+*/
+/*
+         .btn-grad {
+            background-image: linear-gradient(to right, #2BC0E4 0%, #EAECC6  51%, #2BC0E4  100%);
+            margin: 10px;
+            padding: 15px 45px;
+            text-align: center;
+            text-transform: uppercase;
+            transition: 0.5s;
+            background-size: 200% auto;
+            color: white;
+            box-shadow: 0 0 20px #eee;
+            border-radius: 10px;
+            display: block;
+          }
+
+          .btn-grad:hover {
+            background-position: right center; // change the direction of the change here //
+            color: #fff;
+            text-decoration: none;
+          }
+*/
+/*
+@import "https://fonts.googleapis.com/css?family=Montserrat";
+body{background:#ff7f50;font-family:'Montserrat',sans-serif}
+.menu{width:98%;margin:20px auto 0;cursor:pointer}
+.title{width:100%;box-sizing:border-box;background:#fff;padding:14px;border-radius:4px;position:relative;box-shadow:0 0 40px -10px #000;color:#505050}
+span{float:right;font-size:18px!important}
+.dropdown{width:100%;background:#fff;border-radius:4px;box-shadow:0 0 40px -10px #000;color:#505050;margin-top:24px;max-height:0;overflow:hidden;transition:all .5s}
+.down{max-height:360px}
+.arrow{border-left:10px solid transparent;border-right:10px solid transparent;border-bottom:10px solid #fff;position:absolute;right:20px;bottom:-24px;display:none}
+.arrow.gone{display:block}
+p{padding:15px 14px;margin:0;transition:all .1s}
+p:hover{background:coral;-webkit-transform:scale(1.05);color:rgba(255,255,255,0.8);box-shadow:0 0 30px -10px #000}
+*/
+body {
+    background: linear-gradient(135deg, aqua, skyblue, blue);
+}
+
+header {
+    padding: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: #ffffff;
+    background-color: #FF00D2;
+    text-align: center;
+}
+
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,700,300);
+ul {
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  list-style-type: none;
+}
+
+input[type=radio] {
+  display: none;
+}
+
+label {
+  cursor: pointer;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+body .swanky {
+  margin: auto;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+body {
+  /*height: 100vh;*/
+  font-weight: 500;
+  font-family: "Roboto", sans-serif;
+  background: linear-gradient(135deg, aqua, skyblue, blue);
+  /*background: linear-gradient(135deg, #8254EA 0%, #E86DEC 100%);
+  -webkit-font-smoothing: antialiased;*/
+  font-size: 12px;
+}
+body .swanky {
+  perspective: 600px;
+  width: 700px;
+  position: absolute;
+  margin: auto;
+  height: 360px;
+}
+body .swanky_title {
+  float: right;
+  text-align: left;
+  width: 400px;
+  color: white;
+  position: relative;
+  top: 70px;
+}
+body .swanky_title__social a {
+  position: relative;
+  overflow: hidden;
+  width: 140px;
+  margin-right: 15px;
+  text-decoration: none;
+  padding: 0px 0px 5px 0px;
+  height: 40px;
+  border: 2px solid white;
+  float: left;
+  color: white;
+  font-size: 12px;
+  font-weight: 400;
+  margin-top: 20px;
+}
+body .swanky_title__social a .slide {
+  height: 45px;
+  width: 100px;
+  float: left;
+  position: absolute;
+  transform: skew(20deg);
+  left: -120px;
+  transition-property: left;
+  transition-duration: 0.2s;
+  background: white;
+}
+body .swanky_title__social a .slide .arrow {
+  position: absolute;
+  right: 31px;
+  top: 24px;
+  opacity: 0;
+  transform: skew(-20deg);
+}
+body .swanky_title__social a .slide .arrow .stem {
+  width: 10px;
+  height: 2px;
+  background: #858490;
+}
+body .swanky_title__social a .slide .arrow .point {
+  width: 6px;
+  height: 6px;
+  border-right: 2px solid #858490;
+  top: -3px;
+  right: 1px;
+  position: absolute;
+  transform: rotate(45deg);
+  border-top: 2px solid #858490;
+}
+body .swanky_title__social a img {
+  width: 16px;
+  margin-left: 10px;
+  position: relative;
+  margin-right: 8px;
+  transition-property: margin-left;
+  transition-duration: 0.1s;
+  margin-top: 10px;
+  top: 4px;
+}
+body .swanky_title__social a:hover > .slide {
+  left: -70px;
+  transition-property: left;
+  transition-duration: 0.1s;
+}
+body .swanky_title__social a:hover > img {
+  margin-left: 40px;
+  transition-property: margin-left;
+  transition-duration: 0.1s;
+}
+body .swanky_title__social a:hover > .slide .arrow {
+  right: 11px;
+  opacity: 1;
+  transition-property: right, opacity;
+  transition-delay: 0.07s;
+  transition-duration: 0.2s;
+}
+body .swanky .intro {
+  float: right;
+  color: white;
+  width: 370px;
+  top: 50px;
+  position: relative;
+}
+body .swanky .intro h1 {
+  text-shadow: 0px 2px rgba(0, 0, 0, 0.26);
+}
+body .swanky .intro p {
+  line-height: 20px;
+  text-shadow: 0px 1px rgba(0, 0, 0, 0.26);
+}
+body .swanky_wrapper {
+  width: 225px;
+  height: auto;
+  overflow: hidden;
+  border-radius: 4px;
+  background: #2a394f;
+}
+body .swanky_wrapper label {
+  padding: 25px;
+  float: left;
+  height: 72px;
+  border-bottom: 1px solid #293649;
+  position: relative;
+  width: 100%;
+  color: #eff4fa;
+  transition: text-indent 0.15s, height 0.3s;
+  box-sizing: border-box;
+}
+body .swanky_wrapper label img {
+  margin-right: 10px;
+  position: relative;
+  top: 2px;
+  width: 16px;
+}
+body .swanky_wrapper label span {
+  position: relative;
+  top: -3px;
+}
+body .swanky_wrapper label:hover {
+  background: #212e41;
+  border-bottom: 1px solid #2A394F;
+  text-indent: 4px;
+}
+body .swanky_wrapper label:hover .bar {
+  width: 100%;
+}
+body .swanky_wrapper label .bar {
+  width: 0px;
+  transition: width 0.15s;
+  height: 2px;
+  position: absolute;
+  display: block;
+  background: #355789;
+  bottom: 0;
+  left: 0;
+}
+body .swanky_wrapper label .lil_arrow {
+  width: 5px;
+  height: 5px;
+  transition: transform 0.8s;
+  -webkit-transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  border-top: 2px solid white;
+  border-right: 2px solid white;
+  float: right;
+  position: relative;
+  top: 6px;
+  right: 2px;
+  transform: rotate(45deg);
+}
+body .swanky_wrapper__content {
+  position: absolute;
+  display: none;
+  overflow: hidden;
+  left: 0;
+  width: 100%;
+}
+body .swanky_wrapper__content li {
+  width: 100%;
+  opacity: 0;
+  left: -100%;
+  background: #15a4fa;
+  padding: 25px 0px;
+  text-indent: 25px;
+  box-shadow: 0px 0px #126CA1 inset;
+  transition: box-shadow 0.3s, text-indent 0.3s;
+  position: relative;
+}
+
+body .swanky_wrapper__content li:hover {
+  background: #0c93e4;
+  box-shadow: 3px 0px #126CA1 inset;
+  transition: box-shadow 0.3s linear, text-indent 0.3s linear;
+  text-indent: 31px;
+}
+body .swanky_wrapper__content li a:hover:before {
+  color: yellow;
+}
+body .swanky_wrapper__content li a:hover:after {
+  color: white;
+}
+body .swanky_wrapper__content .clear {
+  clear: both;
+}
+
+input[type=radio]:checked + label .swanky_wrapper__content {
+  display: block;
+  top: 68px;
+  border-bottom: 1px solid #212e41;
+}
+
+input[type=radio]:checked + label > .lil_arrow {
+  transition: transform 0.8s;
+  -webkit-transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  transform: rotate(135deg);
+  border-top: 2px solid #14a3f9;
+  border-right: 2px solid #14a3f9;
+}
+
+input[type=radio]:checked + label {
+  height: 510px;
+  background: #212e41;
+  text-indent: 4px;
+  transition-property: height;
+  transition-duration: 0.6s;
+  -webkit-transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    color: yellow;
+}
+
+input[type=radio]:checked + label .bar {
+  width: 0;
+}
+
+input[type=radio]:checked + label li:nth-of-type(1) {
+  -webkit-animation: in 0.15s 0.575s forwards;
+          animation: in 0.15s 0.575s forwards;
+  -webkit-transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  -moz-animation: in 0.15s 0.575s forwards;
+  -moz-transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+input[type=radio]:checked + label li:nth-of-type(2) {
+  -webkit-animation: in 0.15s 0.7s forwards;
+          animation: in 0.15s 0.7s forwards;
+  -webkit-transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  -moz-animation: in 0.15s 0.7s forwards;
+  -moz-transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+input[type=radio]:checked + label li:nth-of-type(3) {
+  -webkit-animation: in 0.15s 0.825s forwards;
+          animation: in 0.15s 0.825s forwards;
+  -webkit-transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  -moz-animation: in 0.15s 0.825s forwards;
+  -moz-transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+input[type=radio]:checked + label li:nth-of-type(4) {
+  -webkit-animation: in 0.15s 0.95s forwards;
+          animation: in 0.15s 0.95s forwards;
+  -webkit-transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  -moz-animation: in 0.15s 0.95s forwards;
+  -moz-transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+input[type=radio]:checked + label li:nth-of-type(5) {
+  -webkit-animation: in 0.15s 1.175s forwards;
+          animation: in 0.15s 1.175s forwards;
+  -webkit-transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  -moz-animation: in 0.15s 1.175s forwards;
+  -moz-transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+input[type=radio]:checked + label li:nth-of-type(6) {
+  -webkit-animation: in 0.15s 1.3s forwards;
+          animation: in 0.15s 1.3s forwards;
+  -webkit-transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  -moz-animation: in 0.15s 1.3s forwards;
+  -moz-transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+@-webkit-keyframes in {
+  from {
+    left: -100%;
+    opacity: 0;
+  }
+  to {
+    left: 0;
+    opacity: 1;
+  }
+}
+
+@keyframes in {
+  from {
+    left: -100%;
+    opacity: 0;
+  }
+  to {
+    left: 0;
+    opacity: 1;
+  }
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+a:link {
+}
+
+a:visited {
+}
+
+a:hover {
+}
+
+a:active {
+}
+/*
+body {
+    background: linear-gradient(90deg, #7debf2, #60a4ff);
+}
+*/
+h1 {
+  -webkit-animation-duration: 3s;
+  -moz-animation-duration: 3s;
+  -webkit-animation-name: slidein;
+  -moz-animation-name: slidein;
+}
+
+@-webkit-keyframes slidein {
+  from {
+    padding-left: 100%;
+    width: 300%;
+  }
+
+  to {
+    padding-left: 0%;
+    width: 100%;
+  }
+}
+
+@-moz-keyframes slidein {
+  from {
+    padding-left: 100%;
+    width: 300%;
+  }
+
+  to {
+    padding-left: 0%;
+    width: 100%;
+  }
+}
+/*
+h1 {
+    background: linear-gradient(to top, #3a1c71, #d76d77, #ffaf7b);
+    background: -webkit-linear-gradient(to top, #3a1c71, #d76d77, #ffaf7b);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+*/
+
+h2 {
+    background: linear-gradient(90deg, #d770b2, #e4ad7a);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/*
+a:link {
+  color: forestgreen;
+  text-decoration-color: hotpink;
+}
+*/
+
+/*
+li {
+    font-style: italic;
+    color: red;
+    text-decoration-color: hotpink;
+}
+*/
+
+/* Services */
+ul#services li {
+    list-style: none;
+    padding: 10px;
+    border: #cccccc solid 1px;
+    margin-bottom: 5px;
+    background: #e6e6e6;
+}
+
+footer {
+    padding: 20px;
+    margin-top: 20px;
+    color: #ffffff;
+    background-color: #e8491d;
+    text-align: center;
+}
+
+/*    使用陰影做出立體的效果
+    https://typesquare.com/zh_tw/sample/csseffect/
+    */
+.todays_pickup {
+    color: #ff0042;
+    font-family: "Harucraft", sans-serif;
+    font-size: 68px;
+    line-height: 1.1;
+    padding: 20px 0;
+    text-align: center;
+    text-shadow: 0px 0px 0 rgb(235,235,235),1px 1px 0 rgb(228,228,228),2px 2px 0 rgb(222,222,222),3px 3px 0 rgb(215,215,215),4px 4px 0 rgb(209,209,209), 5px 5px 0 rgb(203,203,203),6px 6px 5px rgba(0,0,0,0.25),6px 6px 1px rgba(0,0,0,0.5);
+    width: 280px;
+}
+
+.todays_pickup strong {
+    display: block;
+    color: #e97792;
+    font-size: 24px;
+    font-family: "Maru Folk Medium", sans-serif;
+    letter-spacing: 2px;
+    text-shadow: 1px 1px 0 #fff, 3px 3px 0 #f1e3df;
+}
+
+
+/*    使用陰影做出雙重框線效果
+    https://typesquare.com/zh_tw/sample/csseffect/
+    */
+.summer_bargain {
+    margin: 0 auto;
+    width: 310px;
+}
+
+.summer_bargain_inner {
+    border-radius: 3px;
+    color: #37bcf2;
+    font-family: "Maru Folk Heavy", sans-serif;
+    font-size: 42px;
+    font-style: italic;
+    letter-spacing: 0;
+    line-height: 1.2;
+    padding: 3px 0;
+    text-shadow: 2px 2px 0 #fff, 5px 5px 0 #dfe8f1;
+    text-align: center;
+}
+
+.summer_bargain_inner .green {
+    color: #06d9a5;
+}
+
+.summer_bargain_inner .last {
+    letter-spacing: 10px;
+}
+
+.summer_bargain_inner strong {
+    display: block;
+    color: #e97792;
+    font-size: 24px;
+    font-family: "Maru Folk Medium", sans-serif;
+    letter-spacing: 2px;
+    text-shadow: 1px 1px 0 #fff, 3px 3px 0 #f1e3df;
+}
+
+/*    使用陰影做出雙重框線效果
+    */
+
+.btn,
+.btn:focus {
+    display: block;
+    position: relative;
+    z-index: 1;
+    min-width: 200px;
+    color: #FFFFFF;
+    font-size: 1rem;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: all 500ms cubic-bezier(0.77, 0, 0.175, 1);
+    padding: 10px 20px;
+    margin: 10px 0px;
+}
+
+.btn:before,
+.btn:after {
+    content: '';
+    position: absolute;
+    transition: inherit;
+    z-index: -1;
+}
+
+.btn:hover {
+    color: #333333;
+    transition-delay: .5s;
+}
+
+.btn:hover:before {
+    transition-delay: 0s;
+}
+
+.btn:hover:after {
+    background: #FFFFFF;
+    transition-delay: .35s;
+}
+
+.btn.from-top:before,
+.btn.from-top:after {
+    left: 0;
+    height: 0;
+    width: 100%;
+}
+
+.btn.from-top:before {
+    bottom: 0;
+    border: 1px solid #FFFFFF;
+    border-top: 0;
+    border-bottom: 0;
+}
+
+.btn.from-top:after {
+    top: 0;
+    height: 0;
+}
+
+.btn.from-top:hover:before,
+.btn.from-top:hover:after {
+    height: 100%;
+}
+
+.btn.from-bottom:before,
+.btn.from-bottom:after {
+    left: 0;
+    height: 0;
+    width: 100%;
+}
+
+.btn.from-bottom:before {
+    top: 0;
+    border: 1px solid #FFFFFF;
+    border-top: 0;
+    border-bottom: 0;
+}
+
+.btn.from-bottom:after {
+    bottom: 0;
+    height: 0;
+}
+
+.btn.from-bottom:hover:before,
+.btn.from-bottom:hover:after {
+    height: 100%;
+}
+
+.btn.from-left:before,
+.btn.from-left:after {
+    top: 0;
+    width: 0;
+    height: 100%;
+}
+
+.btn.from-left:before {
+    right: 0;
+    border: 1px solid #FFFFFF;
+    border-left: 0;
+    border-right: 0;
+}
+
+.btn.from-left:after {
+    left: 0;
+}
+
+.btn.from-left:hover:before,
+.btn.from-left:hover:after {
+    width: 100%;
+}
+
+.btn.from-right:before,
+.btn.from-right:after {
+    top: 0;
+    width: 0;
+    height: 100%;
+}
+
+.btn.from-right:before {
+    left: 0;
+    border: 1px solid #FFFFFF;
+    border-left: 0;
+    border-right: 0;
+}
+
+.btn.from-right:after {
+    right: 0;
+}
+
+.btn.from-right:hover:before,
+.btn.from-right:hover:after {
+    width: 100%;
+}
+
+.btn.from-center:before {
+    top: 0;
+    left: 50%;
+    height: 100%;
+    width: 0;
+    border: 1px solid #FFFFFF;
+    border-left: 0;
+    border-right: 0;
+}
+
+.btn.from-center:after {
+    bottom: 0;
+    left: 0;
+    height: 0;
+    width: 100%;
+    background: #FFFFFF;
+}
+
+.btn.from-center:hover:before {
+    left: 0;
+    width: 100%;
+}
+
+.btn.from-center:hover:after {
+    top: 0;
+    height: 100%;
+}
+
+/*    使用陰影做出雙重框線效果
+    */
+.btn-771,
+.btn-771:focus {
+    position: relative;
+    z-index: 0;
+    min-width: 200px;
+    border: 2px solid currentColor;
+    border-radius: 48px;
+    color: #FF0FF0;
+    font-size: 1rem;
+    text-align: center;
+    text-decoration: none;
+    overflow: hidden;
+    transition: 0.2s transform ease-in-out;
+    will-change: transform;
+    padding: 10px 20px;
+}
+
+.btn-771:after {
+    content: '';
+    display: block;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    z-index: -1;
+    background-color: #ff0ff0;
+    border-radius: 3rem;
+    transform: translate(-100%, 0) rotate(10deg);
+    transform-origin: top left;
+    transition: 0.2s transform ease-out;
+    will-change: transform;
+}
+
+.btn-771:hover:after {
+    transform: translate(0, 0);
+}
+
+.btn-771:hover {
+    border: 2px solid transparent;
+    color: #FFFFFF;
+    transform: scale(1.05);
+    will-change: transform;
+}
+
+/*    使用陰影做出雙重框線效果
+    */
+
+.btn-70,
+.btn-70 *,
+.btn-70 :after,
+.btn-70 :before,
+.btn-70:after,
+.btn-70:before {
+    border: 0 solid;
+    box-sizing: border-box;
+}
+
+.btn-70 {
+    -webkit-tap-highlight-color: transparent;
+    -webkit-appearance: button;
+    background-color: #000;
+    background-image: none;
+    color: #fff;
+    cursor: pointer;
+    font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+    Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif,
+    Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+    font-size: 100%;
+    line-height: 1.5;
+    margin: 0;
+    -webkit-mask-image: -webkit-radial-gradient(#000, #fff);
+    padding: 0;
+}
+
+.btn-70:disabled {
+    cursor: default;
+}
+
+.btn-70:-moz-focusring {
+    outline: auto;
+}
+
+.btn-70 svg {
+    display: block;
+    vertical-align: middle;
+}
+
+.btn-70 [hidden] {
+    display: none;
+}
+
+.btn-70 {
+    box-shadow: inset 0 0 0 2px #fff;
+    box-sizing: border-box;
+    display: block;
+    font-weight: 900;
+    padding: 1.2rem 3rem;
+    position: relative;
+    text-transform: uppercase;
+    transition: color 0.1s linear;
+}
+
+.btn-70:after,
+.btn-70:before {
+    content: "";
+    position: absolute;
+}
+
+.btn-70:before {
+    border-bottom: var(--border);
+    border-top: var(--border);
+    height: 100%;
+    left: 50%;
+    top: 0;
+    transform: translateX(-50%);
+}
+
+.btn-70:hover:before {
+    --border: 4px solid #000;
+    -webkit-animation: border-top-and-bottom 1s forwards;
+    animation: border-top-and-bottom 1s forwards;
+}
+
+.btn-70:after {
+    border-left: var(--border);
+    border-right: var(--border);
+    bottom: 50%;
+    right: 0;
+    transform: translateY(50%);
+    width: 100%;
+    z-index: -1;
+}
+
+.btn-70:hover:after {
+    --border: 4px solid #000;
+    -webkit-animation: border-right-and-left 1s forwards;
+    animation: border-right-and-left 1s forwards;
+}
+
+@-webkit-keyframes border-top-and-bottom {
+    0% {
+        width: 0;
+    }
+
+    to {
+        width: 100%;
+    }
+}
+
+@keyframes border-top-and-bottom {
+    0% {
+        width: 0;
+    }
+
+    to {
+        width: 100%;
+    }
+}
+
+@-webkit-keyframes border-right-and-left {
+    0% {
+        height: 0;
+    }
+
+    to {
+        height: 100%;
+    }
+}
+
+@keyframes border-right-and-left {
+    0% {
+        height: 0;
+    }
+
+    to {
+        height: 100%;
+    }
+}
+
+/* ------- */
+
+.btn-34,
+.btn-34 *,
+.btn-34 :after,
+.btn-34 :before,
+.btn-34:after,
+.btn-34:before {
+    border: 0 solid;
+    box-sizing: border-box;
+}
+
+.btn-34 {
+    -webkit-tap-highlight-color: transparent;
+    -webkit-appearance: button;
+    background-color: #000;
+    background-image: none;
+    color: #fff;
+    cursor: pointer;
+    font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+    Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif,
+    Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+    font-size: 100%;
+    font-weight: 900;
+    line-height: 1.5;
+    margin: 0;
+    -webkit-mask-image: -webkit-radial-gradient(#000, #fff);
+    padding: 0;
+    text-transform: uppercase;
+}
+
+.btn-34:disabled {
+    cursor: default;
+}
+
+.btn-34:-moz-focusring {
+    outline: auto;
+}
+
+.btn-34 svg {
+    display: block;
+    vertical-align: middle;
+}
+
+.btn-34 [hidden] {
+    display: none;
+}
+
+.btn-34 {
+    border-radius: 99rem;
+    border-width: 2px;
+    overflow: hidden;
+    padding: 0.8rem 3rem;
+    position: relative;
+}
+
+.btn-34:hover {
+    transform: scale(1.1);
+}
+
+.btn-34 span {
+    font-weight: 900;
+    mix-blend-mode: difference;
+}
+
+.btn-34:before {
+    aspect-ratio: 1;
+    background: #fff;
+    border-radius: 50%;
+    content: "";
+    left: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    transition: width 0.2s;
+    width: 0;
+}
+
+.btn-34:hover:before {
+    width: 100%;
+}
+
+/* ------- */
+
+.btn-8,
+.btn-8 *,
+.btn-8 :after,
+.btn-8 :before,
+.btn-8:after,
+.btn-8:before {
+    border: 0 solid;
+    box-sizing: border-box;
+}
+
+.btn-8 {
+    -webkit-tap-highlight-color: transparent;
+    -webkit-appearance: button;
+    background-color: #000;
+    background-image: none;
+    color: #fff;
+    cursor: pointer;
+    font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+    Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif,
+    Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+    font-size: 100%;
+    font-weight: 900;
+    line-height: 1.5;
+    margin: 0;
+    -webkit-mask-image: -webkit-radial-gradient(#000, #fff);
+    padding: 0;
+    text-transform: uppercase;
+}
+
+.btn-8:disabled {
+    cursor: default;
+}
+
+.btn-8:-moz-focusring {
+    outline: auto;
+}
+
+.btn-8 svg {
+    display: block;
+    vertical-align: middle;
+}
+
+.btn-8 [hidden] {
+    display: none;
+}
+
+.btn-8 {
+    border-radius: 99rem;
+    border-width: 2px;
+    overflow: hidden;
+    padding: 0.8rem 3rem;
+    position: relative;
+}
+
+.btn-8 span {
+    mix-blend-mode: difference;
+}
+
+.btn-8:after,
+.btn-8:before {
+    --tilt: 1.2rem;
+    background: #fff;
+    -webkit-clip-path: polygon(0 0,
+    calc(100% - var(--tilt)) 0,
+    100% 100%,
+    0 100%);
+    clip-path: polygon(0 0, calc(100% - var(--tilt)) 0, 100% 100%, 0 100%);
+    content: "";
+    display: block;
+    height: 100%;
+    left: calc(-100% - var(--tilt));
+    position: absolute;
+    top: 0;
+    transform: translateX(var(--progress, 0));
+    transition: transform 0.2s ease;
+    width: calc(100% + var(--tilt));
+}
+
+.btn-8:after {
+    left: 100%;
+    transform: translateX(var(--progress, 0)) rotate(180deg);
+    z-index: -1;
+}
+
+.btn-8:hover:before {
+    --progress: 100%;
+}
+
+.btn-8:hover:after {
+    --progress: -100%;
+}
+
+/*    使用陰影做出雙重框線效果
+    */
+
+@import url(https://fonts.googleapis.com/css?family=BenchNine:700);
+
+.snip1582 {
+    background-color: #c47135;
+    border: none;
+    color: #ffffff;
+    cursor: pointer;
+    display: inline-block;
+    font-family: 'BenchNine', Arial, sans-serif;
+    /*font-size: 1em;
+    font-size: 22px;*/
+    line-height: 1em;
+    /*margin: 15px 40px;*/
+    outline: none;
+    /*padding: 12px 10px 12px*/
+    padding: 12px 12px;
+    position: relative;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.snip1582:before,
+.snip1582:after {
+    border-color: transparent;
+    -webkit-transition: all 0.25s;
+    transition: all 0.25s;
+    border-style: solid;
+    border-width: 0;
+    content: "";
+    height: 24px;
+    position: absolute;
+    width: 24px;
+}
+
+.snip1582:before {
+    border-color: #c47135;
+    border-top-width: 2px;
+    left: 0px;
+    top: -5px;
+}
+
+.snip1582:after {
+    border-bottom-width: 2px;
+    border-color: #c47135;
+    bottom: -5px;
+    right: 0px;
+}
+
+.snip1582:hover,
+.snip1582.hover {
+    background-color: #c47135;
+}
+
+.snip1582:hover:before,
+.snip1582.hover:before,
+.snip1582:hover:after,
+.snip1582.hover:after {
+    height: 100%;
+    width: 100%;
+}
+
+/*    使用陰影做出雙重框線效果
+    */
+
+.btn-700,
+.btn-700:focus {
+    position: relative;
+    min-width: 200px;
+    border: none;
+    border-radius: 2px;
+    background-position: center;
+    background-color: #2196f3;
+    color: #FFFFFF;
+    font-size: 1rem;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: background 0.8s;
+    padding: 10px 20px;
+    box-shadow: 0 0 4px #999;
+}
+.btn-700:hover {
+    color: #FFFFFF;
+    background: #47a7f5 radial-gradient(circle, transparent 1%, #47a7f5 1%) center/15000%;
+}
+.btn-700:active {
+    background-color: #6eb9f7;
+    background-size: 100%;
+    transition: background 0s;
+}
+
+.btn-777,
+.btn-777:focus {
+    position: relative;
+    z-index: 1;
+    min-width: 200px;
+    border: 2px solid #D24D57;
+    border-radius: 0;
+    color: #FFFFFF;
+    font-size: 1rem;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    overflow: hidden;
+    text-shadow: 0 0 1px rgba(0, 0, 0, 0.2), 0 1px 0 rgba(0, 0, 0, 0.2);
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    transition: all 1s ease;
+    padding: 10px 20px;
+}
+.btn-777:after {
+    content: "";
+    position: absolute;
+    height: 0%;
+    left: 50%;
+    top: 50%;
+    width: 150%;
+    z-index: -1;
+    background: #D24D57;
+    -moz-transform: translateX(-50%) translateY(-50%) rotate(-25deg);
+    -ms-transform: translateX(-50%) translateY(-50%) rotate(-25deg);
+    -webkit-transform: translateX(-50%) translateY(-50%) rotate(-25deg);
+    transform: translateX(-50%) translateY(-50%) rotate(-25deg);
+    -webkit-transition: all 0.75s ease 0s;
+    -moz-transition: all 0.75s ease 0s;
+    -o-transition: all 0.75s ease 0s;
+    transition: all 0.75s ease 0s;
+}
+.btn-777:hover {
+    color: #FFFFFF;
+    text-shadow: none;
+}
+.btn-777:hover:after {
+    height: 450%;
+}
+
+
+.btn-772,
+.btn-772:focus {
+    position: relative;
+    min-width: 200px;
+    background: none;
+    border: none;
+    color: #58afd1;
+    font-size: 1rem;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    box-shadow: inset 0 0 0 4px #58afd1;
+    transition: color 0.25s 0.0833333333s;
+    padding: 10px 20px;
+}
+.btn-772:before,
+.btn-772:after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    bottom: 0;
+    right: 0;
+    border: 0 solid transparent;
+    box-sizing: border-box;
+}
+.btn-772:before {
+    border-bottom-width: 4px;
+    border-left-width: 4px;
+}
+.btn-772:after {
+    border-top-width: 4px;
+    border-right-width: 4px;
+}
+.btn-772:hover {
+    color: #ffe593;
+}
+.btn-772:hover:before,
+.btn-772:hover:after {
+    border-color: #ffe593;
+    transition: border-color 0s, width 0.25s, height 0.25s;
+    width: 100%;
+    height: 100%;
+}
+.btn-772:hover:before {
+    transition-delay: 0s, 0s, 0.25s;
+}
+.btn-772:hover:after {
+    transition-delay: 0s, 0.25s, 0s;
+}
